@@ -9,12 +9,9 @@ const inter = Inter({ subsets: ['latin'] })
 
 
 export const metadata: Metadata = {
-  title: 'AI Agent Company Data Scraper',
-  description: 'Scrape and enrich company data using AI agents',
+  title: 'The Boring Marketer - AI Marketing Team',
+  description: '',
 }
-
-
-//comment
 
 export default function RootLayout({
   children,
@@ -22,28 +19,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className={inter.className}>
         <QueryProvider>
-          <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-            <header className="bg-white shadow-sm border-b">
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center py-6">
-                  <div className="flex items-center">
-                    <h1 className="text-2xl font-bold text-gray-900">
-                      AI Agent Scraper
-                    </h1>
-                  </div>
-                  <div className="text-sm text-gray-500">
-                    Company Data Intelligence
-                  </div>
-                </div>
-              </div>
-            </header>
-            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-              {children}
-            </main>
-          </div>
+          {children}
           <Toaster />
         </QueryProvider>
       </body>
