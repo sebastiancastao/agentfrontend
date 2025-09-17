@@ -25,9 +25,11 @@ export default function JobPage() {
   const { data: job, isLoading, error } = useQuery({
     queryKey: ['job', jobId],
     queryFn: () => getJob(jobId),
-    refetchInterval: (data) => {
+    refetchInterval: (query) => {
       // Poll every 3 seconds while job is running
-      return data?.status === JobStatus.QUEUED || data?.status === JobStatus.RUNNING ? 3000 : false
+      const data = query.state.data
+      if (!data) return false
+      return data.status === JobStatus.QUEUED || data.status === JobStatus.RUNNING ? 3000 : false
     },
   })
 
@@ -85,7 +87,7 @@ export default function JobPage() {
     const overrides: any = {}
     Object.keys(editedProfile).forEach(key => {
       if (key !== 'company_name' && key !== 'official_email' && key !== 'confidence_per_field') {
-        if (JSON.stringify(editedProfile[key]) !== JSON.stringify(job.profile![key])) {
+        if (JSON.stringify(editedProfile[key]) !== JSON.stringify((job.profile as any)?.[key])) {
           overrides[key] = editedProfile[key]
         }
       }

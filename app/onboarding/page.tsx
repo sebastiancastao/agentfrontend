@@ -174,7 +174,7 @@ export default function OnboardingPage() {
                     </a>
                   </label>
                   <p className="text-xs text-muted-foreground">
-                    Go to "Add users to analytics" section
+                    Go to &quot;Add users to analytics&quot; section
                   </p>
                 </div>
               </div>
@@ -282,7 +282,7 @@ export default function OnboardingPage() {
                     htmlFor="confirmation"
                     className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-green-800"
                   >
-                    Please confirm you have given us everything or you sent an email to who can give us access and CC'ed{' '}
+                    Please confirm you have given us everything or you sent an email to who can give us access and CC&apos;ed{' '}
                     <strong>mike@nextstepconnect.com</strong> and <strong>dave@nextstepconnect.com</strong>
                   </label>
                 </div>
@@ -306,7 +306,7 @@ export default function OnboardingPage() {
             {isComplete ? (
               <>
                 <CheckCircle className="mr-2 h-5 w-5" />
-                I'm ready. LET'S GO!!!!
+                I&apos;m ready. LET&apos;S GO!!!!
               </>
             ) : (
               'Complete all requirements above'
@@ -315,7 +315,7 @@ export default function OnboardingPage() {
           
           {isComplete && (
             <p className="mt-4 text-sm text-green-600 font-medium">
-              🎉 All requirements completed! We'll start working immediately.
+              🎉 All requirements completed! We&apos;ll start working immediately.
             </p>
           )}
         </div>

@@ -71,7 +71,7 @@ export default function HomePage() {
             Start Company Analysis
           </CardTitle>
           <CardDescription>
-            We'll discover the company's website, extract key information, and provide you with a comprehensive profile for review.
+            We&apos;ll discover the company&apos;s website, extract key information, and provide you with a comprehensive profile for review.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -131,7 +131,7 @@ export default function HomePage() {
                 disabled={createJobMutation.isPending}
               />
               <p className="text-sm text-gray-500">
-                Optional: Comma-separated list of your main competitors' domains for better analysis.
+                Optional: Comma-separated list of your main competitors&apos; domains for better analysis.
               </p>
             </div>
 
@@ -180,7 +180,7 @@ export default function HomePage() {
           </form>
 
           <div className="mt-8 p-4 bg-gray-50 rounded-lg">
-            <h3 className="font-semibold text-gray-900 mb-2">What we'll discover:</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">What we&apos;ll discover:</h3>
             <ul className="text-sm text-gray-600 space-y-1">
               <li>• Official website and domain verification</li>
               <li>• Headquarters address and contact information</li>

@@ -38,7 +38,7 @@ export function ProfileEditor({
     if (field.startsWith('socials.')) {
       const socialKey = field.split('.')[1]
       if (!newProfile.socials) newProfile.socials = {}
-      newProfile.socials[socialKey] = tempValue || undefined
+      ;(newProfile.socials as any)[socialKey] = tempValue || undefined
     } else if (field === 'main_keywords' || field === 'competitors') {
       // Handle array fields - split by comma and trim
       const arrayValue = tempValue.split(',').map(item => item.trim()).filter(item => item.length > 0)
@@ -69,7 +69,7 @@ export function ProfileEditor({
   const getFieldValue = (field: string): string => {
     if (field.startsWith('socials.')) {
       const socialKey = field.split('.')[1]
-      return profile.socials?.[socialKey] || ''
+      return (profile.socials as any)?.[socialKey] || ''
     }
     return (profile as any)[field]?.toString() || ''
   }
@@ -664,7 +664,7 @@ export function ProfileEditor({
             </div>
           </div>
           <div>
-            <Label>What hasn't worked or felt like a waste of time?</Label>
+            <Label>What hasn&apos;t worked or felt like a waste of time?</Label>
             <div className="mt-2 p-3 border rounded-md bg-gray-50 text-sm">
               {profile.ineffective_strategies || <span className="text-gray-500">Ineffective strategies will be analyzed</span>}
             </div>
