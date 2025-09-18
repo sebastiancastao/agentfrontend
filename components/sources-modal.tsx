@@ -105,7 +105,7 @@ export function SourcesModal({ isOpen, onClose, field, sources }: SourcesModalPr
           )}
         </div>
         
-        <div className="border-t p-4 bg-gray-50">
+        <div className="border-t p-4 bg-indigo-1000">
           <div className="flex justify-between items-center text-sm text-gray-600">
             <div>
               Sources are ranked by confidence score and relevance

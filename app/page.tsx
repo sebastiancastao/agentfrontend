@@ -81,7 +81,7 @@ export default function HomePage() {
                     onChange={(e) => setCompanyName(e.target.value)}
                     required
                     disabled={createJobMutation.isPending}
-                    className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500"
+                    className="bg-blue-900/30 border-blue-700/50 text-white placeholder:text-blue-300/70 focus:border-blue-400 focus:ring-blue-400 focus:bg-blue-800/40"
                   />
                 </div>
 
@@ -95,7 +95,7 @@ export default function HomePage() {
                     onChange={(e) => setOfficialEmail(e.target.value)}
                     required
                     disabled={createJobMutation.isPending}
-                    className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500"
+                    className="bg-blue-900/30 border-blue-700/50 text-white placeholder:text-blue-300/70 focus:border-blue-400 focus:ring-blue-400 focus:bg-blue-800/40"
                   />
                 </div>
               </div>

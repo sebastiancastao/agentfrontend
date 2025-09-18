@@ -216,7 +216,7 @@ export function ProfileEditor({
                     </Button>
                   </div>
                 ) : (
-                  <div className="min-h-[40px] p-2 border rounded-md bg-gray-50 text-sm">
+                  <div className="min-h-[40px] p-2 border rounded-md bg-indigo-1000 text-sm">
                     {value || <span className="text-gray-400">Not available</span>}
                   </div>
                 )}
@@ -295,7 +295,7 @@ export function ProfileEditor({
                     </div>
                   </div>
                 ) : (
-                  <div className="min-h-[80px] p-3 border rounded-md bg-gray-50 text-sm">
+                  <div className="min-h-[80px] p-3 border rounded-md bg-indigo-1000 text-sm">
                     {value ? (
                       <div className="whitespace-pre-wrap">{value}</div>
                     ) : (
@@ -383,7 +383,7 @@ export function ProfileEditor({
                     </div>
                   </div>
                 ) : (
-                  <div className="min-h-[60px] p-3 border rounded-md bg-gray-50 text-sm">
+                  <div className="min-h-[60px] p-3 border rounded-md bg-indigo-1000 text-sm">
                     {value ? (
                       <div className="whitespace-pre-wrap">{value}</div>
                     ) : (
@@ -469,7 +469,7 @@ export function ProfileEditor({
                     </Button>
                   </div>
                 ) : (
-                  <div className="min-h-[40px] p-2 border rounded-md bg-gray-50 text-sm">
+                  <div className="min-h-[40px] p-2 border rounded-md bg-indigo-1000 text-sm">
                     {value ? (
                       <a 
                         href={value} 
@@ -653,25 +653,25 @@ export function ProfileEditor({
         <CardContent className="space-y-4">
           <div>
             <Label>How do you currently turn strangers into customers?</Label>
-            <div className="mt-2 p-3 border rounded-md bg-gray-50 text-sm">
+            <div className="mt-2 p-3 border rounded-md bg-indigo-1000 text-sm">
               {profile.customer_acquisition_process || <span className="text-gray-500">Customer acquisition process will be analyzed from website content</span>}
             </div>
           </div>
           <div>
             <Label>What has worked best to grow your business so far?</Label>
-            <div className="mt-2 p-3 border rounded-md bg-gray-50 text-sm">
+            <div className="mt-2 p-3 border rounded-md bg-indigo-1000 text-sm">
               {profile.growth_strategies_that_work || <span className="text-gray-500">Successful growth strategies will be identified</span>}
             </div>
           </div>
           <div>
             <Label>What hasn&apos;t worked or felt like a waste of time?</Label>
-            <div className="mt-2 p-3 border rounded-md bg-gray-50 text-sm">
+            <div className="mt-2 p-3 border rounded-md bg-indigo-1000 text-sm">
               {profile.ineffective_strategies || <span className="text-gray-500">Ineffective strategies will be analyzed</span>}
             </div>
           </div>
           <div>
             <Label>How do you currently use Search Engine Optimization or Search Advertising, if at all?</Label>
-            <div className="mt-2 p-3 border rounded-md bg-gray-50 text-sm">
+            <div className="mt-2 p-3 border rounded-md bg-indigo-1000 text-sm">
               {profile.seo_and_advertising_approach || <span className="text-gray-500">SEO and advertising approach will be determined</span>}
             </div>
           </div>
@@ -688,19 +688,19 @@ export function ProfileEditor({
         <CardContent className="space-y-4">
           <div>
             <Label>What are your main business goals for the next 12 months?</Label>
-            <div className="mt-2 p-3 border rounded-md bg-gray-50 text-sm">
+            <div className="mt-2 p-3 border rounded-md bg-indigo-1000 text-sm">
               {profile.main_business_goals_12_months || <span className="text-gray-500">12-month business goals will be analyzed from company content</span>}
             </div>
           </div>
           <div>
             <Label>What specific SEO, Ads, or visibility goals do you have?</Label>
-            <div className="mt-2 p-3 border rounded-md bg-gray-50 text-sm">
+            <div className="mt-2 p-3 border rounded-md bg-indigo-1000 text-sm">
               {profile.seo_ads_visibility_goals || <span className="text-gray-500">SEO and advertising goals will be identified</span>}
             </div>
           </div>
           <div>
             <Label>What do you believe is blocking you from reaching your goals right now?</Label>
-            <div className="mt-2 p-3 border rounded-md bg-gray-50 text-sm">
+            <div className="mt-2 p-3 border rounded-md bg-indigo-1000 text-sm">
               {profile.current_blocking_factors || <span className="text-gray-500">Current challenges and blocking factors will be analyzed</span>}
             </div>
           </div>
@@ -717,13 +717,13 @@ export function ProfileEditor({
         <CardContent className="space-y-4">
           <div>
             <Label>What are your top 3 priority services to promote first?</Label>
-            <div className="mt-2 p-3 border rounded-md bg-gray-50 text-sm">
+            <div className="mt-2 p-3 border rounded-md bg-indigo-1000 text-sm">
               {profile.top_3_priority_services || <span className="text-gray-500">Top priority services will be identified from website content and offerings</span>}
             </div>
           </div>
           <div>
             <Label>What areas or regions do you serve? What are your top 3 priority locations?</Label>
-            <div className="mt-2 p-3 border rounded-md bg-gray-50 text-sm">
+            <div className="mt-2 p-3 border rounded-md bg-indigo-1000 text-sm">
               {profile.service_areas_and_regions || <span className="text-gray-500">Service areas and priority locations will be analyzed from company information</span>}
             </div>
           </div>
@@ -749,15 +749,15 @@ export function ProfileEditor({
 
             {/* Topic Authority Map Stats */}
             <div className="grid grid-cols-3 gap-4">
-              <div className="text-center p-3 bg-gray-50 rounded-md">
+              <div className="text-center p-3 bg-indigo-1000 rounded-md">
                 <div className="text-2xl font-bold text-blue-600">{profile.topic_authority_map.total_keywords || 0}</div>
                 <div className="text-sm text-gray-600">Total Keywords</div>
               </div>
-              <div className="text-center p-3 bg-gray-50 rounded-md">
+              <div className="text-center p-3 bg-indigo-1000 rounded-md">
                 <div className="text-2xl font-bold text-green-600">{profile.topic_authority_map.pillars?.length || 0}</div>
                 <div className="text-sm text-gray-600">Topic Pillars</div>
               </div>
-              <div className="text-center p-3 bg-gray-50 rounded-md">
+              <div className="text-center p-3 bg-indigo-1000 rounded-md">
                 <div className="text-2xl font-bold text-purple-600">{profile.topic_authority_map.avg_search_volume || 0}</div>
                 <div className="text-sm text-gray-600">Avg Search Volume</div>
               </div>
@@ -790,7 +790,7 @@ export function ProfileEditor({
                       <Label className="text-sm font-medium text-gray-700">Supporting Articles:</Label>
                       <div className="mt-2 space-y-2">
                         {pillar.supporting_articles?.map((article, articleIndex) => (
-                          <div key={articleIndex} className="p-3 bg-gray-50 rounded-md">
+                          <div key={articleIndex} className="p-3 bg-indigo-1000 rounded-md">
                             <p className="font-medium text-sm">{article.title}</p>
                             <div className="flex flex-wrap gap-1 mt-1">
                               {article.keywords?.map((keyword, kwIndex) => (
